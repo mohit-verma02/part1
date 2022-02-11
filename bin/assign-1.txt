@@ -1,0 +1,50 @@
+Assignment is as follows
+
+Part1
+1. Need to crud api's for a simple todo app
+2. a single todo entity will have (text field, due date, is_completed, assigned_to) fields
+3. Push to github send code for review. Make sure your send a Pull request in github. for this you need to push an empty readme file in the master branch, then do all your work in a separate branch and send PR
+
+Part2
+
+1. we need to create a user table also i.e user login etc so that user can login and create his own todo's
+2. next user should be able to create a group and assign todo to it. group basically means list of todo like "week tasks" can be a group and he can create multiple todo into this. similar another group can be "urgent work" and can add multiple todo's to this. 
+3. other feature of group would be, to be all mark all tasks as complete in a group together. deleting entire group and an tasks in it.
+4. create a PR and send code for review, also add all api's to postman and send postman link
+
+
+Part2
+1. Lets use caching, i.e when create todo, or groups we need to start caching data in redis. thinks of a redis structure which can solve this.  and when we read todo, it should be read from redis.  we can discuss who will solve, this once you understand more about redis. 
+send PR when this is done
+
+Part3
+Start to write test cases to validate the above approach i.e unit test and e2e testing. use jest to write unit tests and supercat for end to end test cases.
+send PR when this is done
+
+Part4
+Create a basic app in react to display todo in frontend, a very simple app. use ag-grid if possible, this will basically display list of all todo for every user. 
+send PR when this is done
+
+Part5
+See what is typescript, convert existing app to use typescript (only for nodejs). Can discuss this when you implement
+
+send PR when this is done
+
+
+Part6
+Look at what is kafka, understand what it does.
+Next step is to basically add todo to mongo/redis via kafka queues.
+Instead of when a todo gets added directly to db, it will first get pushed to a kafka queue and then a kafka consumer will read it, insert to do redis/mongo
+
+we can discuss on this how you are going on to implement
+
+send PR when this is done
+
+Part7
+Cronjob, look at how to setup a cronjob/job which will run daily at 5pm and automatically mark all todo items which are passed due date as completed.
+send PR when done
+
+Part8 (optional)
+
+Look at docker-zing your app. i.e create a dockerfile and a dockerfile compose to deploy your app.
+send pr when done.
