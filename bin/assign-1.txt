@@ -45,6 +45,5 @@ Cronjob, look at how to setup a cronjob/job which will run daily at 5pm and auto
 send PR when done
 
 Part8 (optional)
-
 Look at docker-zing your app. i.e create a dockerfile and a dockerfile compose to deploy your app.
 send pr when done.
